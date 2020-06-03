@@ -1,0 +1,11 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://assets/emeralds_icon.png" type="Texture" id=1]
+[ext_resource path="res://src/interface/counter/CoinCounter.tscn" type="PackedScene" id=2]
+[ext_resource path="res://src/interface/counter/LifeCounter.gd" type="Script" id=3]
+
+[node name="LifeCounter" instance=ExtResource( 2 )]
+script = ExtResource( 3 )
+
+[node name="coin" parent="." index="1"]
+texture = ExtResource( 1 )
